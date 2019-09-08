@@ -128,7 +128,7 @@ nav {
 
 @keyframes cursorChange {
   1% {
-    cursor: url(img/favicon-16x16.png), auto;
+    cursor: url(favicon-16x16.png), auto;
   }
   10% {
     cursor: progress;
@@ -197,10 +197,10 @@ nav {
     cursor: wait;
   }
   80% {
-    cursor: url(img/icons8-usa.svg), auto;
+    cursor: url(icons8-usa.svg), auto;
   }
   90% {
-    cursor: url(img/favicon-16x16.png), auto;
+    cursor: url(favicon-16x16.png), auto;
   }
   100% {
     cursor: default;
@@ -240,7 +240,7 @@ nav {
   height: 100%;
   width: 100%;
   z-index: 0;
-  background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("img/BG_photo_B&W.jpg");
+  background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo_B&W.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -398,7 +398,7 @@ h1 {
 }
 
 .fog-img-first {
-  background-image: url("img/fog-1.png");
+  background-image: url("fog-1.png");
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
@@ -408,7 +408,7 @@ h1 {
 .fog-img-second {
   top: 0;
   height: 100vh;
-  background: url("img/fog-2.png");
+  background: url("fog-2.png");
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
@@ -563,7 +563,7 @@ h1 {
 
 .experiment {
   height: 300px;
-  background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("img/BG_photo_B&W.jpg");
+  background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo_B&W.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -717,7 +717,7 @@ position: relative;
 
 .portfolio-card-header {
   height: 220px;
-  background-image: url('img/nrccc.png');
+  background-image: url('nrccc.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
