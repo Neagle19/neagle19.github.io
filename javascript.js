@@ -61,7 +61,7 @@ let learnMore = document.querySelector(".learn-more-button");
     learnMore.style.background = "white";
     learnMore.style.color = "black";
     learnMore.style.border = "3px solid black";
-    absoluteBg.style.backgroundImage = "url(img/BG_photo.jpeg)";
+    absoluteBg.style.backgroundImage = "url(BG_photo.jpeg)";
     absoluteBg.style.transition = "0.3s";
   });
   learnMore.addEventListener("mouseout", function ( event ) {
@@ -69,7 +69,7 @@ let learnMore = document.querySelector(".learn-more-button");
     learnMore.style.background = "transparent";
     learnMore.style.color = "white";
     learnMore.style.border = "3px solid white";
-    absoluteBg.style.backgroundImage = "url(img/BG_photo_B&W.jpg)";
+    absoluteBg.style.backgroundImage = "url(BG_photo_B&W.jpg)";
     absoluteBg.style.transition = "2s ease-in-out";
 });
 
