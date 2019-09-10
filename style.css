@@ -660,45 +660,18 @@ h1 {
 .text-and-arrow img {
   padding-left: 15px;
   padding-top: 15px;
-  animation: arrow-glide 2.3s linear infinite;
+  animation: arrow-glide 3s ease-in-out infinite;
   position: absolute;
   bottom: 100px;
   left: 543px;
 }
 
 @keyframes arrow-glide {
-  0% {
+  0%, 100% {
     bottom: 55px;
-  }
-  3% {
-    bottom: 56px;
-  }
-  15% {
-    bottom: 57px;
-  }
-  35% {
-    bottom: 73px;
-  }
-  47% {
-    bottom: 74px;
   }
   50% {
     bottom: 75px;
-  }
-  53% {
-    bottom: 74px;
-  }
-  65% {
-    bottom: 73px;
-  }
-  85% {
-    bottom: 57px;
-  }
-  97% {
-    bottom: 56px;
-  }
-  100% {
-    bottom: 55px;
   }
 }
 
