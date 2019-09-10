@@ -951,4 +951,7 @@ position: relative;
   .burger {
     padding-right: 0px;
   }
+  .navbar-show {
+    min-height: 15vh
+  }
 }
