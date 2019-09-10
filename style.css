@@ -954,4 +954,8 @@ position: relative;
   .navbar-show {
     min-height: 15vh
   }
+  .absolute-bg {
+    height: 100vh;
+    background-position: bottom center;
+  }
 }
