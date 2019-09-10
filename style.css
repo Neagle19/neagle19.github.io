@@ -955,7 +955,8 @@ position: relative;
     min-height: 15vh
   }
   .absolute-bg {
-    height: 100vh;
-    background-position: bottom center;
+    background-attachment: inherit;
+    background-size: auto 100%;
+    background-position: center center;
   }
 }
