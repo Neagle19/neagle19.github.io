@@ -945,7 +945,7 @@ position: relative;
 
 @media screen and (max-width: 375px) {
   .container1 {
-    margin-top: 0px;
+    margin-top: 14px;
   }
   .text-in-border {
     margin-top: 100px;
@@ -974,5 +974,8 @@ position: relative;
   }
   .card-image {
     margin-bottom: 10px;
+  }
+  .burger {
+    padding-right: 0px;
   }
 }
