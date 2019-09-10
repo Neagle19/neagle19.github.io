@@ -128,7 +128,7 @@ nav {
 
 @keyframes cursorChange {
   1% {
-    cursor: url(favicon-16x16.png), auto;
+    cursor: url(img/favicon-16x16.png), auto;
   }
   10% {
     cursor: progress;
@@ -197,10 +197,10 @@ nav {
     cursor: wait;
   }
   80% {
-    cursor: url(icons8-usa.svg), auto;
+    cursor: url(img/icons8-usa.svg), auto;
   }
   90% {
-    cursor: url(favicon-16x16.png), auto;
+    cursor: url(img/favicon-16x16.png), auto;
   }
   100% {
     cursor: default;
@@ -240,7 +240,7 @@ nav {
   height: 100%;
   width: 100%;
   z-index: 0;
-  background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo_B&W.jpg");
+  background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("img/BG_photo_B&W.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -398,7 +398,7 @@ h1 {
 }
 
 .fog-img-first {
-  background-image: url("fog-1.png");
+  background-image: url("img/fog-1.png");
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
@@ -408,7 +408,7 @@ h1 {
 .fog-img-second {
   top: 0;
   height: 100vh;
-  background: url("fog-2.png");
+  background: url("img/fog-2.png");
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
@@ -550,7 +550,7 @@ h1 {
 }
 
 .container1 {
-  height: 100vh;
+  height: 100%;
   width: auto;
 /*  background: -webkit-linear-gradient(left, #fbfffd 0%, #fbfffd 50%, #fbfffd 100%);
 */background: #F9F9F9;
@@ -563,7 +563,7 @@ h1 {
 
 .experiment {
   height: 300px;
-  background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo_B&W.jpg");
+  background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("img/BG_photo_B&W.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -604,27 +604,22 @@ h1 {
 }
 
 .card-body {
-  height: 60vh;
-  width: 25%;
+  height: 435px;
+  width: 325px;
   border-radius: 2px;
   box-shadow: 1px 1px 7px rgba(0,0,0,0.1);
   box-shadow: 0 0 17px 3px rgba(184,184,184,.5);
   background: white;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  background-size: 200px 200px;
-  background-position: 50% 70%;
-  background-repeat: no-repeat;
   transition: all .2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .card-body:hover {
   transform: scale(1.03);
-}
-
-.card-body i {
-  margin-top: 30px;
-  margin-left: 10px;
 }
 
 .card-body-title {
@@ -632,16 +627,34 @@ h1 {
   align-items: top;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 0px 60px 0px 60px;
+}
+
+.card-body i {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.card-image {
+  height: 100%;
+  background-size: 200px 200px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .card-footer {
 
 }
 
+.text h2 {
+  margin-top: 25px;
+}
+
 .text-and-arrow {
   /*display: flex;
   flex-direction: row;
   align-items: center;*/
+  padding-bottom: 40px;
 }
 
 .text-and-arrow img {
@@ -655,15 +668,15 @@ h1 {
 
 @keyframes arrow-glide {
   0%, 100% {
-    bottom: 100px;
+    bottom: 55px;
   }
   50% {
-    bottom: 115px;
+    bottom: 75px;
   }
 }
 
 .container2 {
-  height: 100vh;
+  height: 100%;
   width: auto;
   position: relative;
   padding: 0 75px 0 75px;
@@ -708,6 +721,7 @@ position: relative;
 /*  box-shadow: 2px 2px 7px rgba(0,0,0,0.3);
 */box-shadow: 0 0 17px 3px rgba(184,184,184,.5);
   border-radius: 3px;
+  margin-bottom: 30px;
 }
 
 .portfolio-card:hover {
@@ -717,7 +731,7 @@ position: relative;
 
 .portfolio-card-header {
   height: 220px;
-  background-image: url('nrccc.png');
+  background-image: url('img/nrccc.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -804,7 +818,7 @@ position: relative;
 
 @media screen and (max-width: 768px) {
   .container1 {
-    padding: 10px 10px 0px 10px;
+    padding: 70px 10px 0px 10px;
     height: auto;
     margin-top: 14px;
     padding-bottom: 13px;
@@ -814,11 +828,11 @@ position: relative;
     padding: 0px 25px;
   }
   .card-body {
-    width: 40%;
+    width: 325px;
     margin-bottom: 35px;
-    height: 42vh;
-    background-position: 50% 85%;
-  }
+    height: 435px;
+/*    background-position: 50% 85%;
+*/  }
   .card-body-title {
     padding-top: 35px;
   }
@@ -859,8 +873,12 @@ position: relative;
   .card-body {
     width: 85%;
     margin-bottom: 35px;
-    height: 65vh;
+    height: 435px;
     background-position: 50% 85%;
+  }
+  .card-body-title {
+    padding-top: 30px;
+    margin: 0px 46px 0px 46px;
   }
   .card-body i {
     margin-top: 20px;
@@ -887,20 +905,14 @@ position: relative;
   .nothing {
     margin-bottom: -13px;
   }
-  .card-body {
-    height: 55vh;
-  }
   #tools {
     margin-top: 9px;
   }
 }
 
 @media screen and (max-width: 413px) {
-  .card-body {
-    height: 65vh;
-  }
   .nothing {
-    margin-bottom: 0px;
+    margin-bottom: -13px;
   }
 }
 
@@ -918,7 +930,7 @@ position: relative;
     padding-right: 30px;
   }
   .card-body {
-    height: 50vh;
+    /*height: 50vh;*/
   }
 }
 
@@ -929,5 +941,11 @@ position: relative;
   }
   .portfolio-card-footer {
     width: 285px;
+  }
+  .card-body {
+    height: 390px;
+  }
+  .card-image {
+    margin-bottom: 10px;
   }
 }
