@@ -146,6 +146,12 @@ nav {
   }
 }
 
+@media screen and (max-width: 414px){ 
+  .navbar-show {
+    min-height: 15vh;
+  }
+}
+
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
