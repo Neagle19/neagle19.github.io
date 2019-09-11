@@ -587,6 +587,8 @@ h1 {
   .absolute-bg {
     height: 100vh;
     background-position: center center;
+    background-attachment: inherit;
+    background-size: auto 100%;
   }
   .learn-more-button {
     font-size: 20px;
@@ -626,10 +628,6 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
-  .absolute-bg {
-    height: 100vh;
-    background-position: center center;
-  }
   .learn-more-button {
     font-size: 15px;
     padding: 10px 20px;
