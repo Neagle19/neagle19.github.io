@@ -100,7 +100,13 @@ nav {
     align-items: center;
     width: 50%;
     transform: translateX(100%);
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      -o-transform: translateX(100%);
     transition: transform 0.5s ease-in;
+      -moz-transition: transform 0.5s ease-in;
+      -webkit-transition: transform 0.5s ease-in;
+      -o-transition: transform 0.5s ease-in;
   }
   .nav-links li {
     opacity: 0;
@@ -113,9 +119,45 @@ nav {
 
 .nav-active {
   transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -o-transform: translateX(0%);
 }
 
 @keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@-moz-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@-o-keyframes navLinkFade {
   from {
     opacity: 0;
     transform: translateX(50px);
@@ -234,6 +276,10 @@ nav {
 /*linear-gradient(rgba(64, 136, 195, 0.2), rgba(110, 206, 286, 0.4))
 */
 .absolute-bg {
+  transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
   position: absolute;
   top: 0;
   left: 0;
@@ -246,7 +292,45 @@ nav {
   background-size: cover;
   overflow: hidden;
   background-attachment: fixed;
+  /*animation: backgroundImage 3s;
+    -moz-animation: backgroundImage 3s;  Firefox
+    -webkit-animation: backgroundImage 3s;
+    -o-animation: backgroundImage 3s;*/
 }
+
+@keyframes backgroundImage {
+    from {
+        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo_B&W.jpg");
+    }
+    to {
+        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo.jpeg");
+    }
+}
+@-moz-keyframes backgroundImage { /* Firefox */
+    from {
+        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo_B&W.jpg");
+    }
+    to {
+        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo.jpeg");
+    }
+}
+@-webkit-keyframes backgroundImage { /* Safari and Chrome */
+    from {
+        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo_B&W.jpg");
+    }
+    to {
+        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo.jpeg");
+    }
+}
+@-o-keyframes backgroundImage { /* Opera */
+    from {
+        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo_B&W.jpg");
+    }
+    to {
+        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo.jpeg");
+    }
+}
+
 
 h1 {
   color: #fff;
@@ -261,7 +345,8 @@ h1 {
 
 .styling h1 {
   letter-spacing: 3px;
-}
+/*  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+*/}
 
 .styling h1:hover {
   /*background: -webkit-linear-gradient(left, #3ebac6 0%, #8b539e 100%);*/
@@ -413,9 +498,42 @@ h1 {
   background-size: contain;
   background-position: center;
   animation: marquee 200s linear infinite;
+    -moz-animation: marquee 200s linear infinite; /* Firefox */
+    -webkit-animation: marquee 200s linear infinite; /* Safari and Chrome */
+    -o-animation: marquee 200s linear infinite;
 }
 
 @keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-200vw, 0, 0);
+  }
+}
+
+@-moz-keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-200vw, 0, 0);
+  }
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-200vw, 0, 0);
+  }
+}
+
+@-o-keyframes marquee {
   0% {
     transform: translate3d(0, 0, 0);
   }
@@ -661,12 +779,42 @@ h1 {
   padding-left: 15px;
   padding-top: 15px;
   animation: arrow-glide 3s ease-in-out infinite;
+    -moz-animation: arrow-glide 3s ease-in-out infinite; /* Firefox */
+    -webkit-animation: arrow-glide 3s ease-in-out infinite; /* Safari and Chrome */
+    -o-animation: arrow-glide 3s ease-in-out infinite;
   position: absolute;
   bottom: 100px;
   left: 543px;
 }
 
 @keyframes arrow-glide {
+  0%, 100% {
+    bottom: 55px;
+  }
+  50% {
+    bottom: 75px;
+  }
+}
+
+@-moz-keyframes arrow-glide {
+  0%, 100% {
+    bottom: 55px;
+  }
+  50% {
+    bottom: 75px;
+  }
+}
+
+@-webkit-keyframes arrow-glide {
+  0%, 100% {
+    bottom: 55px;
+  }
+  50% {
+    bottom: 75px;
+  }
+}
+
+@-o-keyframes arrow-glide {
   0%, 100% {
     bottom: 55px;
   }
@@ -766,7 +914,7 @@ position: relative;
   animation-iteration-count: infinite;*/
 }
 
-@keyframes fade-color {
+/*@keyframes fade-color {
   0% {
     background: white;
   }
@@ -779,7 +927,7 @@ position: relative;
   90% {
     background: white;
   }
-}
+}*/
 
 .footer-flex {
   display: flex;
@@ -951,12 +1099,8 @@ position: relative;
   .burger {
     padding-right: 0px;
   }
-  .navbar-show {
-    min-height: 15vh
-  }
   .absolute-bg {
-    background-attachment: inherit;
-    background-size: auto 100%;
-    background-position: center center;
+    height: 100vh;
+    background-position: bottom center;
   }
 }
