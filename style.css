@@ -556,7 +556,7 @@ h1 {
   }
   .container4 {
     height: 15vh;
-    width: 100vw;
+    width: 100%;
     background: #201D20;
     color: white;
     display: -webkit-flex;
@@ -570,8 +570,6 @@ h1 {
   }
   .container4 a {
     position: absolute;
-    align-items: center;
-    text-align: center;
   }
 }
 
