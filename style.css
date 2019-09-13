@@ -546,16 +546,16 @@ h1 {
     justify-content: space-around;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap; */
-    display: -webkit-flex;
+    display: -webkit-flex !important;
     display: flex;
-    -webkit-align-items: center;
+    -webkit-align-items: center !important;
     align-items: center;
-    -webkit-justify-content: center;
+    -webkit-justify-content: center !important;
     justify-content: center;
   }
-  .container4 a {
+/*   .container4 a {
     display: block;
-  }
+  } */
 }
 
 @media screen and (max-width: 480px) {
