@@ -117,6 +117,8 @@ nav {
   }
   .nav-links a {
     display: block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid;
   }
   .burger {
     display: block;
