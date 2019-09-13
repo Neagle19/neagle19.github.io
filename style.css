@@ -553,6 +553,9 @@ h1 {
     -webkit-justify-content: center;
     justify-content: center;
   }
+  .container4 a {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 480px) {
