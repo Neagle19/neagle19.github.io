@@ -182,87 +182,6 @@ nav {
   }
 }
 
-@keyframes cursorChange {
-  1% {
-    cursor: url(favicon-16x16.png), auto;
-  }
-  10% {
-    cursor: progress;
-  }
-  15% {
-    cursor: cell;
-  }
-  20% {
-    cursor: vertical-text;
-  }
-  25% {
-    cursor: copy;
-  }
-  31% {
-    cursor: n-resize;
-  }
-  32% {
-    cursor: ne-resize;
-  }
-  33% {
-    cursor: e-resize;
-  }
-  34% {
-    cursor: se-resize;
-  }
-  35% {
-    cursor: s-resize;
-  }
-  36% {
-    cursor: sw-resize;
-  }
-  37% {
-    cursor: w-resize;
-  }
-  38% {
-    cursor: nw-resize;
-  }
-  39% {
-    cursor: n-resize;
-  }
-  40% {
-    cursor: nw-resize;
-  }
-  41% {
-    cursor: w-resize;
-  }
-  42% {
-    cursor: sw-resize;
-  }
-  43% {
-    cursor: s-resize;
-  }
-  44% {
-    cursor: se-resize;
-  }
-  45% {
-    cursor: e-resize;
-  }
-  46% {
-    cursor: ne-resize;
-  }
-  47% {
-    cursor: n-resize;
-  }
-  62.5% {
-    cursor: wait;
-  }
-  80% {
-    cursor: url(icons8-usa.svg), auto;
-  }
-  90% {
-    cursor: url(favicon-16x16.png), auto;
-  }
-  100% {
-    cursor: default;
-  }
-}
-
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -306,10 +225,10 @@ nav {
   background-size: cover;
   overflow: hidden;
   background-attachment: fixed;
-  /*animation: backgroundImage 3s;
+  animation: backgroundImage 3s;
     -moz-animation: backgroundImage 3s;  Firefox
     -webkit-animation: backgroundImage 3s;
-    -o-animation: backgroundImage 3s;*/
+    -o-animation: backgroundImage 3s;
 }
 
 @keyframes backgroundImage {
@@ -391,7 +310,6 @@ h1 {
   animation: fadein 8s;
     -moz-animation: fadein 8s; /* Firefox */
     -webkit-animation: fadein 8s;
-    /*-webkit-animation-delay: 2s;*/ /* Safari and Chrome */
     -o-animation: fadein 8s;
 }
 
@@ -502,6 +420,9 @@ h1 {
   background-size: contain;
   background-position: center;
   animation: marquee 350s linear infinite;
+    -moz-animation: marquee 350s linear infinite; /* Firefox */
+    -webkit-animation: marquee 350s linear infinite; /* Safari and Chrome */
+    -o-animation: marquee 350s linear infinite;
 }
 
 .fog-img-second {
