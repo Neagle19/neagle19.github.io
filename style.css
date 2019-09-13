@@ -546,12 +546,12 @@ h1 {
     justify-content: space-around;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap; */
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-justify-content: center;
     justify-content: center;
-  }
-  .container4 a {
-    max-width: 50% !important;
   }
 }
 
