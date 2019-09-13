@@ -225,45 +225,7 @@ nav {
   background-size: cover;
   overflow: hidden;
   background-attachment: fixed;
-  animation: backgroundImage 3s;
-    -moz-animation: backgroundImage 3s;  Firefox
-    -webkit-animation: backgroundImage 3s;
-    -o-animation: backgroundImage 3s;
 }
-
-@keyframes backgroundImage {
-    from {
-        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo_B&W.jpg");
-    }
-    to {
-        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo.jpeg");
-    }
-}
-@-moz-keyframes backgroundImage { /* Firefox */
-    from {
-        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo_B&W.jpg");
-    }
-    to {
-        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo.jpeg");
-    }
-}
-@-webkit-keyframes backgroundImage { /* Safari and Chrome */
-    from {
-        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo_B&W.jpg");
-    }
-    to {
-        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo.jpeg");
-    }
-}
-@-o-keyframes backgroundImage { /* Opera */
-    from {
-        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo_B&W.jpg");
-    }
-    to {
-        background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(5, 5, 5, 0.8)), url("BG_photo.jpeg");
-    }
-}
-
 
 h1 {
   color: #fff;
