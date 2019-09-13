@@ -538,14 +538,6 @@ h1 {
     width: 100%;
     background: #201D20;
     color: white;
-/*     display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap; */
     display: -webkit-flex !important;
     display: flex;
     -webkit-align-items: center !important;
@@ -553,9 +545,6 @@ h1 {
     -webkit-justify-content: center !important;
     justify-content: center;
   }
-/*   .container4 a {
-    display: block;
-  } */
 }
 
 @media screen and (max-width: 480px) {
