@@ -555,7 +555,7 @@ h1 {
     justify-content: center;
   }
   .container4 a {
-    position: absolute;
+    max-width: 50% !important;
   }
 }
 
