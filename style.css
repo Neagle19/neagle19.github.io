@@ -707,7 +707,7 @@ h1 {
 .card-image {
   height: 100%;
   background-size: 200px 200px;
-  background-position: 50% 75%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
@@ -1050,6 +1050,10 @@ position: relative;
   }
   .card-image {
     margin-bottom: 10px;
+    height: 100%;
+    background-size: 200px 200px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
   }
   .burger {
     padding-right: 0px;
