@@ -1043,7 +1043,7 @@ position: relative;
     margin-bottom: 10px;
     height: 100%;
     background-size: 200px 200px;
-    background-position: 50% 100%;
+    background-position: 50% 80%;
     background-repeat: no-repeat;
     padding-bottom: 25px;
   }
@@ -1053,5 +1053,14 @@ position: relative;
   .absolute-bg {
     height: 100vh;
     background-position: bottom center;
+  }
+    .experiment {
+    background-image: none;
+    background-color: #201D20 !important;
+  }
+  .experiment p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 120px;
   }
 }
