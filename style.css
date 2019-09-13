@@ -381,10 +381,10 @@ h1 {
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
-  animation: marquee 350s linear infinite;
     -moz-animation: marquee 350s linear infinite; /* Firefox */
     -webkit-animation: marquee 350s linear infinite; /* Safari and Chrome */
     -o-animation: marquee 350s linear infinite;
+  animation: marquee 350s linear infinite;
 }
 
 .fog-img-second {
@@ -394,27 +394,16 @@ h1 {
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
-  animation: marquee 200s linear infinite;
     -moz-animation: marquee 200s linear infinite; /* Firefox */
     -webkit-animation: marquee 200s linear infinite; /* Safari and Chrome */
     -o-animation: marquee 200s linear infinite;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(-200vw, 0, 0);
-  }
+  animation: marquee 200s linear infinite;
 }
 
 @-moz-keyframes marquee {
   0% {
     transform: translate3d(0, 0, 0);
   }
-
   100% {
     transform: translate3d(-200vw, 0, 0);
   }
@@ -424,7 +413,6 @@ h1 {
   0% {
     transform: translate3d(0, 0, 0);
   }
-
   100% {
     transform: translate3d(-200vw, 0, 0);
   }
@@ -434,7 +422,15 @@ h1 {
   0% {
     transform: translate3d(0, 0, 0);
   }
+  100% {
+    transform: translate3d(-200vw, 0, 0);
+  }
+}
 
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
   100% {
     transform: translate3d(-200vw, 0, 0);
   }
