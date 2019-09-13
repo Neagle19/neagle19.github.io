@@ -124,6 +124,13 @@ nav {
   }
 }
 
+@media screen and (max-width: 480px){
+  .nav-links {
+    height: 60vh;
+    width: 100%;
+  }
+}
+
 .nav-active {
     -moz-transform: translateX(0);
     -webkit-transform: translateX(0);
