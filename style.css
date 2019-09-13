@@ -1036,6 +1036,9 @@ position: relative;
   .card-body {
     height: 390px;
   }
+  .card-body-title {
+    padding-top: 10px;
+  }
   .card-image {
     margin-bottom: 10px;
     height: 100%;
