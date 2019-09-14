@@ -111,7 +111,6 @@ nav {
       -webkit-transition: transform 0.5s ease-in;
       -o-transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
-    border-top: 2px solid black;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px 6px;
   }
   .nav-links li {
