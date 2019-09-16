@@ -17,12 +17,18 @@ const navSlide = () => {
   let wrapper = document.querySelector(".wrapper");
 
   learn.addEventListener('click', () => {
-    if (wrapper.style.animation) {
-      wrapper.style.animation = ''
+    // dim background when drop-down menu is active
+    if (wrapper.style.opacity == "0.5") {
+      wrapper.style.opacity = "1"
     } else {
-      wrapper.style.animation = 'cursorChange 4s ease';
-    }
-  });
+      wrapper.style.opacity = "0.5";
+    };
+//     if (wrapper.style.animation) {
+//       wrapper.style.animation = ''
+//     } else {
+//       wrapper.style.animation = 'cursorChange 4s ease';
+//     }
+//   });
 
   // Toggle Nav
   burger.addEventListener('click', () => {
