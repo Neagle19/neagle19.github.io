@@ -17,12 +17,6 @@ const navSlide = () => {
   let wrapper = document.querySelector(".wrapper");
 
   learn.addEventListener('click', () => {
-    // dim background when drop-down menu is active
-    if (wrapper.style.opacity == "0.5") {
-      wrapper.style.opacity = "1"
-    } else {
-      wrapper.style.opacity = "0.5";
-    };
 //     if (wrapper.style.animation) {
 //       wrapper.style.animation = ''
 //     } else {
@@ -32,6 +26,12 @@ const navSlide = () => {
 
   // Toggle Nav
   burger.addEventListener('click', () => {
+    // dim background when drop-down menu is active
+    if (wrapper.style.opacity == "0.5") {
+      wrapper.style.opacity = "1"
+    } else {
+      wrapper.style.opacity = "0.5";
+    };
     nav.classList.toggle('nav-active');
   //Animate Links
     navLinks.forEach((link, index) => {
