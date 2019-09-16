@@ -16,7 +16,7 @@ const navSlide = () => {
   let learn = document.querySelector(".learn-more-button");
   let wrapper = document.querySelector(".wrapper");
 
-  learn.addEventListener('click', () => {
+//   learn.addEventListener('click', () => {
 //     if (wrapper.style.animation) {
 //       wrapper.style.animation = ''
 //     } else {
