@@ -1018,9 +1018,9 @@ position: relative;
   .arrow {
     opacity: 0;
   }
-  #lightbulb {
+/*   #lightbulb {
     margin-top: 9px;
-  }
+  } */
   .experiment {
     background-image: none;
     background-color: #201D20 !important;
@@ -1076,9 +1076,9 @@ position: relative;
   .nothing {
     margin-bottom: -13px;
   }
-  #tools {
+/*   #tools {
     margin-top: 9px;
-  }
+  } */
 }
 
 @media screen and (max-width: 413px) {
