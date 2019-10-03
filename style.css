@@ -462,13 +462,20 @@ h1 {
   background: #fff;
 }
 
+/* iphone x problem */
 .fog-container {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   z-index: 1;
+}
+
+@media screen and (max-width: 375px) {
+  .fog-container {
+    height: auto;
+  }
 }
 
 .fog-img {
@@ -736,7 +743,8 @@ h1 {
   align-items: top;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 15px 60px 0px 60px;
+  margin: 0px 60px 0px 60px;
+  top: 15px;
 }
 
 .card-body i {
@@ -1018,9 +1026,9 @@ position: relative;
   .arrow {
     opacity: 0;
   }
-/*   #lightbulb {
+/*  #lightbulb {
     margin-top: 9px;
-  } */
+  }*/
   .experiment {
     background-image: none;
     background-color: #201D20 !important;
@@ -1070,15 +1078,18 @@ position: relative;
   .portfolio-cards a {
     width: auto;
   }
+  .web {
+    margin: 0px 30px;
+  }
 }
 
 @media screen and (max-width: 414px) {
   .nothing {
     margin-bottom: -13px;
   }
-/*   #tools {
+/*  #tools {
     margin-top: 9px;
-  } */
+  }*/
 }
 
 @media screen and (max-width: 413px) {
@@ -1091,6 +1102,9 @@ position: relative;
   .container1 {
     margin-top: 14px;
   }
+  .web {
+    margin: 0px 15px;
+  }
   .text-in-border {
     margin-top: 100px;
   }
@@ -1102,6 +1116,9 @@ position: relative;
   }
   .card-body {
     /*height: 50vh;*/
+  }
+  .portfolio-card-footer {
+    width: 375px;
   }
 }
 
@@ -1132,5 +1149,8 @@ position: relative;
   .absolute-bg {
     height: 100vh;
     background-position: bottom center;
+  }
+  .web {
+    margin: 0px 0px;
   }
 }
