@@ -1083,6 +1083,12 @@ position: relative;
   }
 }
 
+@media screen and (max-width: 450px) {
+  .fog-container {
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .nothing {
     margin-bottom: -13px;
